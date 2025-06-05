@@ -1,0 +1,10 @@
+^C:\USERS\LEONA\TODO_APP\BUILD\WINDOWS\X64\CMAKEFILES\68BBE4AE37BCEE846FCDAE93F415C1C6\GENERATE.STAMP.RULE
+setlocal
+"D:\Visual Studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/leona/todo_app/windows -BC:/Users/leona/todo_app/build/windows/x64 --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/leona/todo_app/build/windows/x64/todo_app.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
