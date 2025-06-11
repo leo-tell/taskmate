@@ -10,7 +10,7 @@ class TaskViewModel extends ChangeNotifier {
   /// Repositório de tarefas, injetável para testes.
   final TaskRepository _repository;
 
-  /// Permite injetar outro repositório (ex: FakeRepository em testes).
+  /// Permite injetar outro repositório.
   /// Se nenhum for passado, usa o padrão `MockTaskRepository`.
   TaskViewModel({TaskRepository? repository})
       : _repository = repository ?? MockTaskRepository();
