@@ -29,7 +29,6 @@ class TaskViewModel extends ChangeNotifier {
       case TaskFilter.concluidas:
         return _allTasks.where((t) => t.completed).toList();
       case TaskFilter.todas:
-      default:
         return _allTasks;
     }
   }
